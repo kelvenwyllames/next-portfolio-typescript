@@ -1,33 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
+*::-webkit-scrollbar {
+    width: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
+*::-webkit-scrollbar-track {
+    background: #141414;
+    border-radius: 5px;
 }
 
-body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-            to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))
-        )
-        rgb(var(--background-start-rgb));
+*::-webkit-scrollbar-thumb {
+    background-color: #e64a19;
+    border-radius: 14px;
 }
 
 @layer utilities {
-    .text-balance {
-        text-wrap: balance;
+    .text-clamp-h1-hero {
+        font-size: clamp(2rem, 4vw, 3.375rem);
+    }
+
+    .text-clamp-p-hero {
+        font-size: clamp(0.75rem, 4vw, 1rem);
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    @media (0 <= width <= 1550px) {
+        .hidden {
+            display: none;
+        }
     }
 }
