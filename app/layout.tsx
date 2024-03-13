@@ -16,11 +16,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="pt-br" className={archivo.className}>
-            <body className="bg-[#111111] text-gray-100 overflow-x-hidden">
-                <Header />
-                {children}
-            </body>
+        <html lang="en">
+            <body className={inter.className}>{children}</body>
         </html>
     );
 }
