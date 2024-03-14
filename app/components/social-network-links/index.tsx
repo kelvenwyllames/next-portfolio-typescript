@@ -7,7 +7,11 @@ type SocialNetworkLinksProps = {
 
 export const SocialNetworkLinks = ({ url, icon }: SocialNetworkLinksProps) => {
     return (
-        <a className="hover:text-gray-100 transition-colors" href={url}>
+        <a
+            className="hover:text-gray-100 transition-colors"
+            href={url}
+            target="_blank"
+        >
             {icon}
         </a>
     );

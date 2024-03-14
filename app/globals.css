@@ -16,6 +16,12 @@
     border-radius: 14px;
 }
 
+@layer base {
+    body {
+        background-color: #111111;
+    }
+}
+
 @layer utilities {
     .text-clamp-h1-hero {
         font-size: clamp(2rem, 4vw, 3.375rem);

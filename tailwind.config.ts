@@ -10,6 +10,8 @@ const config: Config = {
         extend: {
             backgroundImage: {
                 "hero-image": "url('/images/hero-bg.svg')",
+                "about-image": "url('/images/bg-div-aboutme.svg')",
+                "profile-image": "url('/images/profile-pic.svg')",
             },
             boxShadow: {
                 button: "0px 0px 68px 7px rgba(211, 86, 3, 0.4)",
